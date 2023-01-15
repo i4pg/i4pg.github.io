@@ -1,5 +1,9 @@
 # The Site Configuration
 
+# auto-open new drafts or posts in your editor
+jekyll_compose:
+  auto_open: true
+
 # Import the theme
 theme: jekyll-theme-chirpy
 
@@ -11,7 +15,6 @@ baseurl: ''
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
 lang: en
-
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Dubai
@@ -25,7 +28,7 @@ tagline: I write about my journey   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   
-  Welcome to [Your Name]'s blog, where you'll follow my journey as a full-stack developer with a focus on Ruby on Rails. Join me as I share my progress, insights and tips on web development using Ruby on Rails.
+  Welcome to Abdullah Alattas's blog, where you'll follow my journey as a full-stack developer with a focus on Ruby on Rails. Join me as I share my progress, insights and tips on web development using Ruby on Rails.
 
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
@@ -83,7 +86,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: './assets/img/favicons/favicon-16x16.png'
+avatar: './assets/img/favicons/favicon-32x32.png'
 
 # boolean type, the global switch for ToC in posts.
 toc: true

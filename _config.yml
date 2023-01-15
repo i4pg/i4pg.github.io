@@ -1,5 +1,9 @@
 # The Site Configuration
 
+# auto-open new drafts or posts in your editor
+jekyll_compose:
+  auto_open: true
+
 # Import the theme
 theme: jekyll-theme-chirpy
 
@@ -11,7 +15,6 @@ baseurl: ''
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
 lang: en
-
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Dubai
@@ -83,7 +86,7 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: './assets/img/favicons/favicon-16x16.png'
+avatar: './assets/img/favicons/android-chrome-512x512.png'
 
 # boolean type, the global switch for ToC in posts.
 toc: true

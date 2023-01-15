@@ -1,0 +1,22 @@
+---
+layout: post
+title: Ruby's runtime callbacks
+---
+I guess this is what you thought about callbacks ?
+```Ruby
+class User < ApplicationRecord
+  before_save :encrypt_password
+  
+  def encrypt_password
+    self.password = encrypt(password)
+  end
+  
+  def encrypt(string)
+    # encryption logic goes here
+  end
+end
+```
+Indeed you are right, who's femiliar with ruby on rails must know about callbacks events, but, today we will take a step back and we will dig deeper to the underground of Ruby runtime callbacksand how it's work and how we can use it in diffirent use-cases
+So what's is callbacks btw?
+Ruby allows developers to set up methods with special, reserved names (known as callbacks) that can be used to perform actions at specific points in the program's execution. These callbacks act as "tripwires" that are triggered at certain times or under certain conditions, and can be used to examine what's happening in the program and respond accordingly. This allows for flexible, dynamic program design and allows developers to respond to specific events or conditions in the program. Examples of callbacks include methods that are called when a module is included in a class, or when a class is inherited. These callbacks give developers the ability to respond to specific events within the program and make the program more dynamic and flexible.
+
