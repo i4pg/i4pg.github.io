@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Announcement!
-categories: [Update, Blog]
+title: Announcement
+categories: [Update]
 tags: [Ruby, Blog, Ruby on Rails, Web, Web development, Learning, Blogging, New, Announcement, Introduction, Update]
 pin: true
 date: 2023-01-14 17:43 +0400
 ---
-# Hello, my name is Abdullah and I'm thrilled to announce the launch of my new blog, where I'll be documenting my journey as a full-stack developer with a focus on Ruby on Rails. 
+# Announcement 
+Hello, my name is Abdullah and I'm thrilled to announce the launch of my new blog, where I'll be documenting my journey as a full-stack developer with a focus on Ruby on Rails. 
 
 For the past year, I've been immersing myself in the world of web development and learning as much as I can about the different technologies and techniques involved. It's been a challenging and rewarding experience, and I'm excited to share my progress and insights with others who are also just starting out or are interested in learning about web development.
 
