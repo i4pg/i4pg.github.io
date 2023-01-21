@@ -15,7 +15,7 @@ tags:
 - tutorial
 - learn
 image:
-  path: https://unsplash.com/photos/p8w7krXVY1k/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NXx8cnVieXxlbnwwfHx8fDE2NzQyNjMyMjA&force=true
+  path: https://images.unsplash.com/photo-1522776851755-3914469f0ca2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80
   alt: Photo by Joshua Fuller on Unsplash
 date: 2023-01-21 12:07 +0400
 ---
