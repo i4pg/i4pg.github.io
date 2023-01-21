@@ -2,7 +2,7 @@
 layout: post
 title: Announcement
 categories: [Update]
-tags: [Ruby, Blog, Ruby on Rails, Web, Web development, Learning, Blogging, New, Announcement, Introduction, Update]
+tags: [ruby, blog, ruby on rails, web, web development, learn, new, announcement, introduction, update]
 pin: true
 date: 2023-01-14 17:43 +0400
 ---
