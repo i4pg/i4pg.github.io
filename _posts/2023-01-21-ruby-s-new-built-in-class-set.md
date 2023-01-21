@@ -15,7 +15,7 @@ tags:
 - tutorial
 - learn
 image:
-  path: ../assets/preview.jpg
+  path: /assets/preview.jpg
   alt: Photo by Joshua Fuller on Unsplash
 date: 2023-01-21 12:07 +0400
 ---
