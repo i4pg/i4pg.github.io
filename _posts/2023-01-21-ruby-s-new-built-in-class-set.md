@@ -26,7 +26,7 @@ In this article, we'll dive into the Set class and all it has to offer. Get read
 A Set is a collection of objects that cannot contain any duplicates. The objects in a set can be of any type, such as strings, integers, arrays, or other sets. The uniqueness of the objects in a set is maintained through the use of a hash function, which assigns a unique key to each object in the set. This means that if an object is added to a set and an identical object already exists in the set, the new object will not be added and the set will remain unique.
 > info: Set is now available as a built-in class in Ruby
 {: .prompt-info }
-```Ruby
+```ruby
 require "set" # no longer required
 ```
 ## Creating a Set
@@ -35,7 +35,7 @@ In Ruby, the Set class provides a collection of unique elements. To create a set
 Alternatively, you can provide a code block to the constructor. In this case, each object in the collection will be passed through the block, and the resulting value will be added to the set.
 
 Here are some examples of creating sets in Ruby:
-```Ruby
+```ruby
 # Create an empty set
 empty_set = Set.new
 
@@ -60,7 +60,7 @@ To remove an object from a set, you can use the `Set#delete`. If the object you 
 You can also use the `Set#add?`, which returns `nil` if the set is unchanged after the operation.
 
 Here is an example using the middle_east set:
-```Ruby
+```ruby
 > middle_east << :qatar
 => #<Set: {:ksa, :uae, :egypt, :qatar}>
 > middle_east.add(:qatar) # same as "<<" operator
@@ -74,26 +74,26 @@ Here is an example using the middle_east set:
 The `Set` class in Ruby is a collection of unique elements. You can perform various operations on sets, such as finding their intersection (elements that are present in both sets), union (elements that are present in either set), and difference (elements that are present in one set but not the other). These operations can be performed using the intersection method `&`, union method `+` or `|`, and difference method `-`.
 
 For example, if you have two sets `middle_east` and `asia`, you can find their intersection by using the `&` operator or the intersection method:
-```Ruby
+```ruby
 > middle_east & asia # middle_east.intersection(asia)
 => #<Set: {:ksa, :uae}>
 ```
 This will return a new set consisting of the elements that are present in both `middle_east` and `asia`.
 To find the union of the two sets, you can use the `+` operator or the union method:
-```Ruby
+```ruby
 > middle_east + asia # middle_east.union(asia) || middle_east | asia
 => #<Set: {:ksa, :uae, :egypt, :china, :japan, :thailand}>
 ```
 This will return a new set consisting of all elements that are present in either `middle_east` or `asia`.
 To find the difference between the two sets, you can use the `-` operator or the difference method:
-```Ruby
+```ruby
 > middle_east - asia # middle_east.difference(asia)
 => #<Set: {:egypt}>
 ```
 This will return a new set consisting of the elements that are present in `middle_east` but **not** in `asia`.
 
 There is also an exclusive-or operator `^` which returns a set consisting of elements that are present in either `middle_east` or `asia`, **but not both**:
-```Ruby
+```ruby
 > middle_east ^ asia
 => #<Set: {:china, :japan, :thailand, :egypt}>
 ```
@@ -103,7 +103,7 @@ It's important to note that these set operations do not modify the original sets
 When you merge a hash into a set in Ruby, the resulting set will contain two-element, _key/value_ arrays based on the elements in the hash. This is because when you iterate through a hash, it breaks itself down into an array of two-element arrays, where each array represents a _key/value_ pair in the hash.
 
 Here's an example that demonstrates this behavior:
-```Ruby
+```ruby
 middle_east.merge({ kuwait: :kuwait, iraq: :baghdad })
 # => #<Set: {:ksa, :uae, :egypt, [:kuwait, :kuwait], [:iraq, :baghdad]}>
 ```
@@ -111,7 +111,7 @@ If you provide a hash as an argument to the `Set#new` constructor, the resulting
 
 Sometimes you may want to merge just the keys of a hash into a set, rather than the entire hash. This can be useful because set membership is based on the uniqueness of the keys in a hash. To do this, you can use the `Hash#keys` on the hash, and then pass the resulting array to the `Set#merge`.
 Here's an example:
-```Ruby
+```ruby
 my_hash = { kuwait: :kuwait, iraq: :baghdad }
 # => {:kuwait=>:kuwait, :iraq=>:baghdad}
 middle_east.merge(my_hash.keys)
@@ -121,7 +121,7 @@ You can try out different permutations of set merging to see how it works, as lo
 ## Superset and Subset
 Set objects have the ability to test for subset and superset relationships between sets. To do this, you can use the `Set#subset?` and `Set#superset?`, respectively. It's important to note that the arguments to these methods must be sets, not _arrays_, _hashes_, or any other kind of _enumerable_ or _collection_.
 Here's an example of how you can use these methods:
-```Ruby
+```ruby
 middle_east = Set.new(%i[uae ksa])
 # => #<Set: {:uae, :ksa}>
 asia = Set.new(%i[china japan thailand uae ksa])
@@ -139,7 +139,7 @@ A proper subset is a subset that is smaller than the parent set by at least one 
 A proper superset of a set is a second set that contains all the elements of the first set, as well as at least one element that is not present in the first set.
 
 Here's an example of how you can use these methods:
-```Ruby
+```ruby
 set1 = Set.new(%i[a b c])
 # => #<Set: {:a, :b, :c}>
 set2 = Set.new(%i[a b])
